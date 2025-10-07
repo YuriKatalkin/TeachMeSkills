@@ -1,3 +1,5 @@
+package lesson2;
+
 public class MyMain {
     public static void main(String[] args) {
         System.out.println("Hello World!\nЯ родился!☺");
@@ -11,6 +13,7 @@ public class MyMain {
         taskFive();
         taskWithOneStar();
         castingTraining();
+        System.out.println("Test commit for git-repository");
     }
 
     public static void castingTraining() {
