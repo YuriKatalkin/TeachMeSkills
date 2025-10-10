@@ -64,7 +64,9 @@ public class MyOperators {
         }
         System.out.println(sum);
         taskWithStar();
+
         //
+         //
     }
 }
 
