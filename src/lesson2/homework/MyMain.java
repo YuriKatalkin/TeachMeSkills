@@ -13,7 +13,7 @@ public class MyMain {
         taskFive();
         taskWithOneStar();
         castingTraining();
-        System.out.println("Test commit for git-repository.");
+        System.out.println("Test commit for git-repository");
 
     }
 
