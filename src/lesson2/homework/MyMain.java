@@ -14,6 +14,7 @@ public class MyMain {
         taskWithOneStar();
         castingTraining();
         System.out.println("Test commit for git-repository.");
+
     }
 
     public static void castingTraining() {
