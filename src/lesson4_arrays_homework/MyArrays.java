@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class MyArrays {
     public static void main(String[] args) {
-        homework();
+        //homework();
     }
 
     public static void homework() {
