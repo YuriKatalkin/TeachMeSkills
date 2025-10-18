@@ -9,17 +9,22 @@ public class MyArrays {
     }
 
     public static void homework() {
-        //
+
         Scanner input = new Scanner(System.in);
-        System.out.println("Введите размер массива: ");
+
+        System.out.println("ПРИМЕЧАНИЕ! Размер массива не должен быть меньше 4. " + "\nВведите размер массива: ");
+
         int arraynumbers = input.nextInt();
         int[] numbers = new int[arraynumbers];
+        int nullElement = 0;
+        boolean hasANull = false;
+
         System.out.println("Введите " + arraynumbers + " чисел:");
+
         for (int i = 0; i < arraynumbers; i++) {
             numbers[i] = input.nextInt();
         }
-        int nullElement = 0;
-        boolean hasANull = false;
+
 
 
 
@@ -39,7 +44,7 @@ public class MyArrays {
         //Найти минимальный-максимальный элементы и вывести в консоль.
 
         int min = numbers[0];
-        int max = numbers[5];
+        int max = numbers[1];
 
         for (int i = 0; i < arraynumbers; i++) {
             if (numbers[i] < min) {
@@ -65,7 +70,8 @@ public class MyArrays {
             }
         }
         System.out.println("Минимальный индекс - " + minIndex);
-        int maxIndex = 5;
+
+        int maxIndex = 1;
 
         for (int i = 0; i < arraynumbers; i++) {
             if (numbers[i] > numbers[maxIndex]) {
@@ -77,8 +83,6 @@ public class MyArrays {
         //Задача 4:
         //Найти и вывести количество нулевых элементов. Если нулевых элементов нет - вывести
         //сообщение, что их нет.
-
-        System.out.println("Введите " + arraynumbers + " чисел:");
 
         for (int i = 0; i < arraynumbers; i++) {
             if (numbers[i] == 0) {
@@ -97,8 +101,8 @@ public class MyArrays {
         //Пройти по массиву и поменять местами элементы первый и последний, второй и
         //предпоследний и т.д.
 
-        System.out.print("Порядок элементов массива - ");
-        for (int i = 5; i >= arraynumbers / 2; i--) {
+        System.out.print("Измененный порядок элементов массива - ");
+        for (int i = 1; i >= arraynumbers / 2; i--) {
             int dividedElements = numbers[i];
             if (numbers[i] == dividedElements) {
 
@@ -106,7 +110,7 @@ public class MyArrays {
             System.out.print(dividedElements);
         }
 
-        for (int i = arraynumbers - 4; i >= 0; i--) {
+        for (int i = arraynumbers - 1; i >= 0; i--) {
             int lastPartElements = numbers[i];
             if (numbers[i] == lastPartElements) {
 
@@ -121,11 +125,12 @@ public class MyArrays {
 
         System.out.println("Проверка массива:");
         for (int i = 1; i < arraynumbers; i++) {
-            if (numbers[i] < numbers[i - 1]) {
-                System.out.println("Проверка: - массив не является возрастающей последовательностью!!!");
+            if (numbers[i] <= numbers[i - 1]) {
+                System.out.println("Проверка: - массив не является возрастающей последовательностью!!!" +
+                        "индекс массива(numbers[" + "?" + "])");
                 break;
             } else {
-                System.out.println("Проверка: " + "индекс массива(numbers[" + i + "])" + " - текущая возрастающая" +
+                System.out.println("Проверка: " + " Индекс массива(numbers[" + i + "])" + " - текущая возрастающая" +
                         " последовательность...");
             }
         }
