@@ -30,6 +30,7 @@ public class MyArrays {
 
         //Задача 1:
         //Пройти по массиву, вывести все элементы в прямом и в обратном порядке.
+
         for (int i = 0; i < arraynumbers; i++) {
             System.out.print(numbers[i]);
         }
@@ -146,6 +147,5 @@ public class MyArrays {
         //Output: [1,4,0,5,6,4]
         //Input: [9,9,9]
         //Output: [1,0,0,0]
-
     }
 }
