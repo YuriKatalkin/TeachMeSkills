@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class MyMultiArrays {
     public static void main(String[] args) {
         //homeworkTaskOne();
-        homeworkTaskTwo();
+        //homeworkTaskTwo();
     }
 
     //Задача 1:
@@ -34,6 +34,7 @@ public class MyMultiArrays {
 
 
         //1.2. - Добавить к каждому значению число, которое пользователь будет вводить с консоли.
+
         System.out.println("Введите число через клавишу enter: ");
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
@@ -104,6 +105,5 @@ public class MyMultiArrays {
             }
             System.out.println();
         }
-
     }
 }
