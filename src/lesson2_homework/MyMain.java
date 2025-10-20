@@ -13,11 +13,10 @@ public class MyMain {
         //taskFive();
         //taskWithStar();
         //castingTraining();
-        //
-
     }
 
     //training for casting
+
     public static void castingTraining() {
         float myFloatValue = 0.33F;
         double myDoubleValue = myFloatValue;
