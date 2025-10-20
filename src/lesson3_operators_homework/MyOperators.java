@@ -77,6 +77,7 @@ public class MyOperators {
     //программа суммирует все числа от 1 до введенного пользователем числа. Для ввода
     //числа воспользуйтесь классом Scanner. Сделать проверку, чтобы пользователь не мог
     //ввести некорректные данные.
+
     public static void taskWithStar() {
        Scanner input = new Scanner(System.in);
        int a = input.nextInt();
