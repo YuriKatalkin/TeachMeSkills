@@ -18,8 +18,5 @@ public class Runner {
         rabbit.eat("Meat");
         tiger.voice();
         tiger.eat("Grass");
-
-
-
     }
 }

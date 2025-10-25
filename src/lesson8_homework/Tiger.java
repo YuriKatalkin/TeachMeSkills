@@ -1,8 +1,6 @@
 package lesson8_homework;
 
 public class Tiger extends Animal {
-
-
     @Override
     public void voice() {
         System.out.println("Голос тигра - Rrrrawrrr...");

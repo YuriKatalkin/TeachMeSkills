@@ -1,7 +1,6 @@
 package lesson8_homework;
 
 public class Rabbit extends Animal {
-
     @Override
     public void voice() {
         System.out.println("Голос кролика - Pipip");
@@ -17,5 +16,4 @@ public class Rabbit extends Animal {
             System.out.println("...");
         }
     }
-
 }
