@@ -16,7 +16,7 @@ public class Circle extends Figure {
     }
 
     @Override
-    public void calculatePerimeters() {
+    public void calculatePerimeter() {
         System.out.println("Периметр круга равен(см) = " + forCalculatePerimeters());
     }
 

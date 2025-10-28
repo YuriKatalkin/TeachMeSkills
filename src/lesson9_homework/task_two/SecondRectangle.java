@@ -1,10 +1,10 @@
 package lesson9_homework.task_two;
 
-public class Rectangle extends Figure {
+public class SecondRectangle extends Figure{
     private double length;
     private double width;
 
-    public Rectangle(int length, int width) {
+    public SecondRectangle(double length, double width) {
         this.length = length;
         this.width = width;
     }
@@ -14,12 +14,12 @@ public class Rectangle extends Figure {
         double length = this.length;
         double width = this.width;
         double square = length * width;
-        System.out.println("Площадь прямоугольника равна(см) = " + square);
+        System.out.println("Площадь прямоугольника(2) равна(см) = " + square);
     }
 
     @Override
     public void calculatePerimeter() {
-        System.out.println("Периметр прямоугольника равeн(см) = " + forCalculatePerimeters());
+        System.out.println("Периметр прямоугольника(2) равeн(см) = " + forCalculatePerimeters());
     }
 
     @Override

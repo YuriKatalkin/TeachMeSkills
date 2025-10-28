@@ -9,26 +9,40 @@ public class Runner {
         //периметра всех фигур в массиве.
         Circle circle = new Circle(30);
         circle.calculateSquare();
-        circle.calculatePerimeters();
+        circle.calculatePerimeter();
         circle.forCalculatePerimeters();
 
         System.out.println("_".repeat(50));
 
         Rectangle rectangle = new Rectangle(15, 30);
         rectangle.calculateSquare();
-        rectangle.calculatePerimeters();
+        rectangle.calculatePerimeter();
         rectangle.forCalculatePerimeters();
 
         System.out.println("_".repeat(50));
 
         Triangle triangle = new Triangle(15, 30, 31, 31);
         triangle.calculateSquare();
-        triangle.calculatePerimeters();
+        triangle.calculatePerimeter();
         triangle.forCalculatePerimeters();
 
         System.out.println("_".repeat(50));
 
-        Figure[] figures = {circle, rectangle, triangle};
+        SecondTriangle secondTriangle = new SecondTriangle(10,24,25,25);
+        secondTriangle.calculateSquare();
+        secondTriangle.calculatePerimeter();
+        secondTriangle.forCalculatePerimeters();
+
+        System.out.println("_".repeat(50));
+
+        SecondRectangle secondRectangle = new SecondRectangle(12,28);
+        secondRectangle.calculateSquare();
+        secondRectangle.calculatePerimeter();
+        secondRectangle.forCalculatePerimeters();
+
+        System.out.println("_".repeat(50));
+
+        Figure[] figures = {circle, rectangle, triangle, secondTriangle, secondRectangle};
         double sumAllPerimeters = 0;
         for (Figure fig : figures) {
             sumAllPerimeters += fig.forCalculatePerimeters();

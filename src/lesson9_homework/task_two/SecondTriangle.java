@@ -1,12 +1,12 @@
 package lesson9_homework.task_two;
 
-public class Triangle extends Figure{
+public class SecondTriangle extends Figure{
     private double base;
     private double height;
     private double leftSide;
     private double rightSide;
 
-    public Triangle(double base, double height, double leftSide, double rightSide) {
+    public SecondTriangle (double base, double height, double leftSide, double rightSide) {
         this.base = base;
         this.height = height;
         this.leftSide = leftSide;
@@ -18,12 +18,12 @@ public class Triangle extends Figure{
         double base = this.base;
         double height = this.height;
         double square = (base * height) / 2;
-        System.out.println("Площадь треугольника равна(см) = " + square);
+        System.out.println("Площадь треугольника(2) равна(см) = " + square);
     }
 
     @Override
     public void calculatePerimeter() {
-        System.out.println("Периметр треугольника равен(см) = " + forCalculatePerimeters());
+        System.out.println("Периметр треугольника(2) равен(см) = " + forCalculatePerimeters());
     }
 
     @Override
