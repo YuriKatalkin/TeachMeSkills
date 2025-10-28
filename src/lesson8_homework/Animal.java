@@ -1,6 +1,6 @@
 package lesson8_homework;
 
-public abstract class Animal {
+public class Animal {
     public void voice() {
 
     }
