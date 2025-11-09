@@ -22,4 +22,9 @@ public class Lion extends Animal {
     public void makeNoise() {
         System.out.println("lion - rawr");
     }
+
+    @Override
+    public String nameExample(String name) {
+        return super.nameExample(name);
+    }
 }

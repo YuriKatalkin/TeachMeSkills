@@ -23,4 +23,8 @@ public class Animal {
     public void makeNoise(){
         System.out.println();
     }
+
+    public String nameExample (String name){
+        return "Имя - " + this.name;
+    }
 }
