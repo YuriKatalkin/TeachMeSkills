@@ -1,9 +1,6 @@
 package SpecialTask;
 
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
-import java.io.PrintWriter;
+import java.io.*;
 import java.util.Arrays;
 
 public class Runner {
@@ -18,6 +15,14 @@ public class Runner {
             oos.writeObject(t);
             System.out.println("Сериализовано!");
         } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("terminal.txt"))) {
+            Terminal readT = (Terminal) ois.readObject();
+            System.out.println("Десериализовано!" + readT);
+            System.out.println(Arrays.toString(readT.parameters));
+        } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
 
