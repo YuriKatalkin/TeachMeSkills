@@ -4,9 +4,18 @@ import java.time.LocalDate;
 import java.util.Scanner;
 
 public class TaskOne {
-    //Задача 1:
-    //Пользователь вводит в консоль дату своего рождения. Программа должна вернуть дату,
-    //когда пользователю исполнится 100 лет. Использовать Date/Time API.
+    public static void main(String[] args) {
+        //Задача 1:
+        //Пользователь вводит в консоль дату своего рождения. Программа должна вернуть дату,
+        //когда пользователю исполнится 100 лет. Использовать Date/Time API.
+
+        LocalDate birthDate = TaskOne.getBirthDate();
+
+        TaskOne taskOne = new TaskOne("Yuri Katalkin", LocalDate.now(), birthDate);
+
+        System.out.println(taskOne);
+    }
+
     private String user;
     private LocalDate localDate;
     private LocalDate birthDate;
@@ -19,12 +28,15 @@ public class TaskOne {
 
     public static LocalDate getBirthDate(){
         Scanner scanner = new Scanner(System.in);
+
         System.out.println("Введите год рождения:");
         int year = scanner.nextInt();
         System.out.println("Введите месяц рождения:");
         int month = scanner.nextInt();
+
         System.out.println("Введите день рождения:");
         int day = scanner.nextInt();
+
         return LocalDate.of(year, month, day);
     }
 
