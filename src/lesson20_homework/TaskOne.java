@@ -8,12 +8,14 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
-public class Runner {
+public class TaskOne {
     public static void main(String[] args) {
+        //Задача 1:
+        //Пользователь вводит с клавиатуры значение в массив. После чего запускаются два
+        //потока. Первый поток находит максимум в массиве, второй — минимум. Результаты
+        //вычислений возвращаются в метод main().
         taskOne();
-        //taskTwo();
     }
-
     public static void taskOne() {
         Scanner scanner = new Scanner(System.in);
         ExecutorService executor = Executors.newFixedThreadPool(2);
@@ -85,15 +87,5 @@ public class Runner {
             }
             return min;
         }
-    }
-
-    public static void taskTwo() {
-        //Задача 2:
-        //Сортировка массива цифр в нескольких потоках различными алгоритмами:
-        // сортировка вставками;
-        // сортировка выбором;
-        // сортировка пузырьком.
-        //Каждый вид сортировки должен запускаться в отдельном потоке. После вывести
-        //результат отсортированных массивов в консоль.
     }
 }
